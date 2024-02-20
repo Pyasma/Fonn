@@ -1,0 +1,73 @@
+<!-- design.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reforestation Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Community Reforestation Platform</h1>
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="signup">
+    <h2>Join the Initiative</h2>
+    <form id="signup-form" action="#">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <button type="button" id="signup-button">Sign Up</button>
+    </form>
+  </section>
+
+  <input type="file" id="file-upload" style="display: none;"> <!-- Hidden file input -->
+
+  <button class="add-post" id="add-post-button">Add a Post</button>
+
+  <footer>
+    <p>&copy; 2024 Community Reforestation Platform. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Add event listener for the "Sign Up" button
+      document.getElementById("signup-button").addEventListener("click", function() {
+        // Redirect to the About page
+        window.location.href = "about.html";
+      });
+    
+      // Add event listener for the "Add Post" button
+      document.getElementById("add-post-button").addEventListener("click", function() {
+        // Trigger file input click event
+        document.getElementById("file-upload").click();
+      });
+    
+      // Add event listener for file input change event
+      document.getElementById("file-upload").addEventListener("change", function(event) {
+        const file = event.target.files[0]; // Get the selected file
+        if (file) {
+          // You can now upload the file to the server or perform any other action
+          alert("File selected: " + file.name);
+        }
+      });
+    });
+  </script>
+</body>
+</html

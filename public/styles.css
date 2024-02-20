@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bg10.jpg'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the content stretches to fill the viewport */
+  }
+  
+  header {
+    background-color: #66cc99;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .signup {
+    margin: 30px auto; /* Center the form horizontally */
+    border: 2px solid #66cc99; /* Outline border */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    width: 600px; /* Set width for the form */
+  }
+  
+  .signup form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+  }
+  
+  .signup label {
+    font-weight: bold;
+    color: #000; /* Black color for labels */
+  }
+  
+  .signup input {
+    padding: 5px;
+    background-color: #f0f0f0; /* Light gray background for input fields */
+    border: none;
+  }
+  
+  .signup button {
+    padding: 10px;
+    background-color: #66cc99;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .add-post {
+    margin: 20px auto; /* Center the button horizontally */
+    padding: 15px 30px; /* Increased padding for a larger button */
+    background-color: #66cc99;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+  }
+  
